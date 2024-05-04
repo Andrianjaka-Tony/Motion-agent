@@ -1,0 +1,27 @@
+:root {
+  --theme: #eb5939;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: At hauss;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+  background: #111;
+  color: #fff;
+}
+
+@font-face {
+  font-family: At hauss;
+  src: url(./fonts/At-Hauss.otf);
+}

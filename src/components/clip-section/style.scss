@@ -1,0 +1,83 @@
+.clip-section {
+  width: 100vw;
+  height: 400vh;
+  position: relative;
+
+  .clip-section-sticky-container {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  .clip-section-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: centers;
+
+    .clip-section-container-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.6);
+    }
+  }
+
+  .clip-section-container.mask {
+    color: black;
+    background: white;
+  }
+
+  .clip-section-title {
+    font-size: 4vw;
+    padding-inline: 5vw;
+    font-weight: inherit;
+    position: relative;
+    color: white;
+
+    .clip-section-title-marger {
+      margin-left: 10vw;
+    }
+
+    .text-anime .text-anime-word {
+      margin-right: 1vw;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .clip-section-title {
+      font-size: 6vw;
+
+      .clip-section-title-marger {
+        margin-left: 5vw;
+      }
+
+      .text-anime .text-anime-word {
+        margin-right: 1.5vw;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .clip-section-title {
+      font-size: 8vw;
+
+      .clip-section-title-marger {
+        margin-left: 5vw;
+      }
+
+      .text-anime .text-anime-word {
+        margin-right: 1.75vw;
+      }
+    }
+  }
+}

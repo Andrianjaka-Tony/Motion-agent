@@ -1,0 +1,53 @@
+.gadget-card {
+  width: 300px;
+  aspect-ratio: 3 / 4.5;
+  position: relative;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gadget-card-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111111a8;
+
+    &:hover {
+      .gadget-card-name,
+      .gadget-card-power {
+        opacity: 0.5;
+      }
+    }
+
+    .gadget-card-name {
+      width: 100%;
+      margin-block: 20px;
+      text-align: center;
+      opacity: 0.7;
+      font-size: 20px;
+      opacity: 0;
+      transition: opacity 200ms;
+    }
+
+    .gadget-card-power {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 96px;
+      opacity: 0.5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 200ms;
+    }
+  }
+}

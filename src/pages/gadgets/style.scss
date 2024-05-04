@@ -1,0 +1,32 @@
+.gadget {
+  width: 100vw;
+  height: 400vh;
+
+  .gadget-sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-x: hidden;
+
+    .gadget-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: var(--theme);
+      font-size: 2vw;
+      width: 100%;
+      margin: 4vw;
+    }
+
+    .gadgets-container {
+      display: inline-flex;
+      width: fit-content;
+      padding-inline: calc(50vw - 150px);
+      gap: 25px;
+      height: 100vh;
+      align-items: center;
+      position: relative;
+    }
+  }
+}

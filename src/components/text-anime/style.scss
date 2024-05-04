@@ -1,0 +1,8 @@
+.text-anime {
+  display: flex;
+  flex-wrap: wrap;
+
+  .text-anime-word {
+    overflow-y: hidden;
+  }
+}
