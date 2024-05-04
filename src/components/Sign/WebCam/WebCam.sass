@@ -1,0 +1,113 @@
+$blue-neon: #006357
+.container_webCam
+    display: flex
+    flex-direction: column
+    background: #555555
+    justify-content: center
+    position: absolute
+    z-index: 2
+    width: fit-content
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    height: fit-content
+    padding: 0.4em
+    .message
+        position: absolute
+        left: 50%
+        bottom: 1.5rem
+        transform: translateX(-50%)
+        z-index: 3
+        text-align: center
+        transition: all 0.2s ease-in-out
+        background: #fff
+        color: #fff
+        padding: 0.4rem 0.8rem
+        border-radius: 0.2rem
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 0.94rem
+        opacity: 0
+    .error
+        opacity: 1
+        background: #ee2e2e
+    .good
+        opacity: 1
+        background: #209c2e
+
+    video
+        object-fit: cover
+        z-index: 3
+    .inner_container
+        position: relative
+        width: 100%
+        height: fit-content
+        .loader_Container_web
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%,-50%)
+            z-index: 2
+        .icon_web
+            position: absolute
+            left: 1.2rem
+            top: 1.2rem
+            background: #000
+            border-radius: 0.6rem
+            width: 2.5rem
+            height: 2.5rem
+            display: flex
+            cursor: pointer
+            z-index: 5
+            cursor: pointer
+            justify-content: center
+            align-items: center
+            svg
+                color: #fff
+                font-size: 1.5rem
+                path
+                    color: #fff
+
+    .img_container_web
+        position: relative
+        z-index: 4
+    .line_scanner
+        width: 100%
+        border: 0.1rem solid $blue-neon
+        border-radius: 2rem
+        z-index: 5
+        position: absolute
+
+        animation: up_and_down 3s infinite forwards linear
+        box-shadow: 0 0 .2rem #fff, 0 0 .2rem #0eaa10, 0 0 2rem $blue-neon, 0 0 0.8rem $blue-neon, 0 0 2.8rem $blue-neon,inset 0 0 1.3rem $blue-neon
+    .text_helper
+        position: absolute
+        left: 50%
+        top: 90%
+        transform: translate(-50%,-50%)
+        z-index: 6
+        font-size: 0.8rem
+        color: #fff
+        text-align: center
+        font-weight: bolder
+        animation: show_and_hide 1.8s infinite forwards linear
+
+@keyframes show_and_hide
+    0%
+        opacity: 0
+    50%
+        opacity: 1
+    100%
+        opacity: 0
+
+@keyframes up_and_down
+    0%
+        top: 0
+    50%
+        top: 100%
+    100%
+        top: 0

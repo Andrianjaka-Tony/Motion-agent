@@ -1,0 +1,35 @@
+@use '../../breakpoints'
+
+#sign_container
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    transition: all 0.2s ease-in-out
+
+    justify-content: center
+    margin: 2.4vw auto 2.8vw auto
+    @include breakpoints.break_LG()
+        margin: 4vw auto 5vw auto
+    @include breakpoints.break_MD()
+        margin: 3vw auto 4vw auto
+    @include breakpoints.break_XSM()
+        margin: 8vw auto 10vw auto
+    *
+        font-family: At hauss
+.container_modal_sign
+    background: #333
+    padding: 0.5em 2.4rem
+    position: relative
+    border-radius: 0.5rem
+    position: fixed
+    left: 50%
+    top: 50%
+    z-index: 4
+    transform: translate(-50%, -50%)
+    @include breakpoints.break_LG()
+        padding: 0.5em 2.2rem
+    @include breakpoints.break_MD()
+        padding: 0.5em 1.75rem
+    @include breakpoints.break_XSM()
+        padding: 0.5rem 0.8rem
+        border-radius: 0.2rem
