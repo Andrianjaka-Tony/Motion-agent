@@ -5,3 +5,7 @@ const Profile = () => {
 };
 
 export default Profile;
+<<<<<<< HEAD
+=======
+// ;
+>>>>>>> 511b923 (p)
