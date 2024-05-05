@@ -5,8 +5,8 @@ import { useRef } from "react";
 
 const items = [
   {
-    name: "Liantsoa",
-    post: "Backend Developer",
+    name: "CIA",
+    post: "Sponsor",
     description: "Hello world, I lovw programming",
     image: "/images/5.jpeg",
     begin: 0,
@@ -14,24 +14,24 @@ const items = [
     animated: false,
   },
   {
-    name: "Jeremia",
-    post: "Backend Developer",
+    name: "Mossad",
+    post: "Affiliate",
     description: "Hello world, I lovw programming",
     image: "/images/6.jpeg",
     begin: 0,
     end: 0.33,
   },
   {
-    name: "Jaona",
-    post: "Frontend Developer",
+    name: "Asis",
+    post: "Collaborator",
     description: "Hello world, I lovw programming",
     image: "/images/7.jpeg",
     begin: 0.33,
     end: 0.66,
   },
   {
-    name: "Tony",
-    post: "Frontend Developer",
+    name: "GCHQ",
+    post: "Contributor",
     description: "Hello world, I lovw programming",
     image: "/images/8.jpeg",
     begin: 0.66,

@@ -1,0 +1,37 @@
+.client-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5vw 4vw;
+  z-index: 8;
+
+  .client-nav-btn {
+    background: white;
+    height: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 80px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+
+    &.client-nav-sos {
+      height: 60px;
+      background: var(--theme);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 4vw 4vw;
+
+    .client-nav-btn {
+      height: 40px;
+    }
+  }
+}

@@ -8,16 +8,16 @@ function Testimonials() {
 
   const data = [
     {
-      text: "Cette agence de m'a deja sauve plus d'un fois. Malgre cela, ils sont toujours la pour me sauver.",
+      text: "This platform revolutionized my operations. Seamless and global.",
     },
     {
-      text: "Cette agence de m'a deja sauve plus d'un fois. Malgre cela, ils sont toujours la pour me sauver.",
+      text: "Access to intel worldwide. Essential for covert missions.",
     },
     {
-      text: "Cette agence de m'a deja sauve plus d'un fois. Malgre cela, ils sont toujours la pour me sauver.",
+      text: "Invaluable tool for navigating the shadows. Highly recommended.",
     },
     {
-      text: "Cette agence de m'a deja sauve plus d'un fois. Malgre cela, ils sont toujours la pour me sauver.",
+      text: "Efficient, discreet, and indispensable for every agent",
     },
   ];
 
@@ -29,7 +29,7 @@ function Testimonials() {
   return (
     <motion.section ref={ref} className="testimonials">
       <div className="testimonials-sticky">
-        <div className="testimonials-title">Temoignages</div>
+        <div className="testimonials-title">Testimonials</div>
         <motion.div style={{ x, left }} className="testimonials-container">
           {data.map((item, index) => (
             <TestimonialCard key={index} {...item} />

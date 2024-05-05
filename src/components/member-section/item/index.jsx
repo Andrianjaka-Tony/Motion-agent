@@ -28,7 +28,7 @@ function Item({ name, post, image, progress, begin, end, animated = true }) {
       }}
       className="member-section-item"
     >
-      <div className="member-section-item-name">Membre</div>
+      <div className="member-section-item-name">Partner</div>
       <div className="member-section-item-bottom">
         <div className="post">{name}</div>
         <img

@@ -9,9 +9,9 @@ function TestimonialCard({ text }) {
       </div>
       <div className="testimonials-user">
         <div className="img-container">
-          <img src="/images/13.jpeg" alt="" />
+          <img src="/images/3.jpeg" alt="" />
         </div>
-        <p>John Doe</p>
+        <p>Secret agent</p>
       </div>
     </div>
   );

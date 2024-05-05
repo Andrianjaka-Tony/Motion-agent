@@ -6,6 +6,7 @@ import "./style.scss";
 import { useRef, useState } from "react";
 import useScrollToTop from "../../hooks/useScrollToTop";
 import GadgetVisualizer from "../../components/gadget-visualizer";
+import ReactLenis from "lenis/react";
 
 const gadgets = [
   {

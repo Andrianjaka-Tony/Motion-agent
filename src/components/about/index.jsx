@@ -30,10 +30,7 @@ function About() {
           className="about-sticky-clip"
         >
           <div className="about-sticky-image">
-            <img src="/images/16.jpeg" alt="" />
-          </div>
-          <div className="about-sticky-text">
-            <p></p>
+            <img src="/images/map.png" alt="" />
           </div>
         </motion.div>
       </div>

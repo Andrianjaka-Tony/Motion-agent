@@ -22,17 +22,6 @@ function Enter({ setEnter }) {
     "/images/14.jpeg",
     "/images/15.jpeg",
     "/images/16.jpeg",
-    "/partners/1.webp",
-    "/partners/2.webp",
-    "/partners/3.webp",
-    "/partners/4.webp",
-    "/partners/5.webp",
-    "/partners/6.webp",
-    "/partners/7.webp",
-    "/partners/8.webp",
-    "/partners/9.png",
-    "/partners/10.webp",
-    "/partners/11.png",
     "/gadgets/1.jpeg",
     "/gadgets/2.jpeg",
     "/gadgets/3.jpeg",
@@ -41,6 +30,7 @@ function Enter({ setEnter }) {
     "/gadgets/6.jpeg",
     "/gadgets/7.jpeg",
     "/gadgets/8.jpeg",
+    "/images/map.png",
   ];
 
   const [loadingProgress, setLoadingProgress] = useState(0);

@@ -1,9 +1,26 @@
 import { motion } from "framer-motion";
 import "./style.scss";
 
-function GadgetCard({ id, name, power, image, objectPosition, setId, setVisualizer, description, setDescription, setName, setPower }) {
+function GadgetCard({
+  id,
+  name,
+  power,
+  image,
+  objectPosition,
+  setId,
+  setVisualizer,
+  description,
+  setDescription,
+  setName,
+  setPower,
+}) {
   return (
-    <div
+    <motion.div
+      initial={{
+        opacity: 0,
+      }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 1 }}
       onClick={() => {
         setId(id);
         setDescription(description);
@@ -18,7 +35,7 @@ function GadgetCard({ id, name, power, image, objectPosition, setId, setVisualiz
         <div className="gadget-card-name">{name}</div>
         <div className="gadget-card-power">{power}</div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

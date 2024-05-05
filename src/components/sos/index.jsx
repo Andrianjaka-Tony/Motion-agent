@@ -4,7 +4,7 @@ import { CiMicrophoneOn } from "react-icons/ci";
 import "./style.scss";
 
 function SOS({ setSos }) {
-  const mimeType = "audio/mpeg";
+  const mimeType = "audio/wav";
 
   const [permission, setPermission] = useState(false);
   const mediaRecorder = useRef(null);
@@ -56,9 +56,9 @@ function SOS({ setSos }) {
       formData.append("audio", audioBlob, "recorded_audio.wav");
       fetch("http://192.168.137.169:5000/sos/vo", {
         method: "POST",
-        // headers: {
-        //   "Content-Type": "multipart/form-data",
-        // },
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
         body: formData,
       })
         .then((response) => response.json())

@@ -39,6 +39,14 @@ function Hero() {
         style={{ aspectRatio: `${innerWidth} / ${innerHeight}` }}
         alt=""
       />
+      <p className="hero-about">
+        Welcome to our platform, where innovation and secrecy converge on a{" "}
+        <span>global scale</span>. With our presence extending across all continents, we offer
+        discreet access to agents worldwide. From the bustling <span>metropolises</span> to the
+        remote corners of the earth, our reach knows no bounds. Powered by cutting-edge technology
+        and a dedication <span>to confidentiality</span>, we provide a seamless experience for
+        operatives navigating the complexities of espionage.
+      </p>
     </motion.section>
   );
 }

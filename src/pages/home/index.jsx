@@ -7,7 +7,6 @@ import Transition from "../../components/transition";
 import useScrollToTop from "../../hooks/useScrollToTop";
 import MemberSection from "../../components/member-section";
 import Testimonials from "../../components/testimonials";
-import Partners from "../../components/partners";
 import About from "../../components/about";
 
 function Home() {
@@ -29,7 +28,6 @@ function Home() {
       </AnimatePresence>
       <About />
       <Testimonials />
-      <Partners />
       <MemberSection />
       <Footer />
     </>
