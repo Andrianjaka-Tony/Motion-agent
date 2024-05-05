@@ -6,49 +6,49 @@ import Image from "./image";
 
 const images = [
   {
-    src: "/2.png",
+    src: "/images/2.jpeg",
     width: 180,
     x: -255,
     y: -76.5,
   },
   {
-    src: "/3.png",
+    src: "/images/3.jpeg",
     width: 350,
     x: -255,
     y: 195,
   },
   {
-    src: "/4.png",
+    src: "/images/4.jpeg",
     width: 300,
     x: 85,
     y: 196,
   },
   {
-    src: "/6.png",
+    src: "/images/6.jpeg",
     width: 380,
     x: 440,
     y: 215,
   },
   {
-    src: "/5.png",
+    src: "/images/5.jpeg",
     width: 200,
     x: 265,
     y: -93,
   },
   {
-    src: "/7.png",
+    src: "/images/7.jpeg",
     width: 200,
     x: -460,
     y: -65,
   },
   {
-    src: "/8.png",
+    src: "/images/8.jpeg",
     width: 300,
     x: 0,
     y: -250,
   },
   {
-    src: "/1.png",
+    src: "/images/1.jpeg",
     width: 300,
     x: 0,
     y: 0,

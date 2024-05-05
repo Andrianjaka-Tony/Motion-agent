@@ -7,28 +7,28 @@ import Image from "./image";
 
 const images = [
   {
-    src: "/2.png",
+    src: "/images/1.jpeg",
   },
   {
-    src: "/3.png",
+    src: "/images/3.jpeg",
   },
   {
-    src: "/4.png",
+    src: "/images/4.jpeg",
   },
   {
-    src: "/6.png",
+    src: "/images/6.jpeg",
   },
   {
-    src: "/5.png",
+    src: "/images/5.jpeg",
   },
   {
-    src: "/7.png",
+    src: "/images/7.jpeg",
   },
   {
-    src: "/8.png",
+    src: "/images/8.jpeg",
   },
   {
-    src: "/1.png",
+    src: "/images/1.jpeg",
   },
 ];
 
