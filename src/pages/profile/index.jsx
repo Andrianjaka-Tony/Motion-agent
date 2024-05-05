@@ -12,10 +12,3 @@ const Profile = () => {
 };
 
 export default Profile;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-// ;
->>>>>>> 511b923 (p)
-=======
->>>>>>> 429cdf3 (m)
