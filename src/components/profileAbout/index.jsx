@@ -24,8 +24,8 @@ const ProfileAbout = () => {
     let res = await alaivoGet("mymission", null, false);
     console.log(res);
     if (res) {
-      setAgent(res.agent);
-      setMyMissions(res.missions);
+      if (res.agent) setAgent(res.agent);
+      if (res.missions) setMyMissions(res.missions);
     } else {
       alert("Error on fetching data, please reload the page");
     }
@@ -110,7 +110,7 @@ const ProfileAbout = () => {
               </div>
             </>
           )}
-          {myMissions.length === 0 && <div className="empty"> No Data </div>}
+          {myMissions.length === 0 && <div className="empty"> No Data :/</div>}
         </div>
         <div className="space"></div>
         <div className="section_user">
