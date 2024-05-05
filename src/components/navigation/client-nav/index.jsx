@@ -3,7 +3,7 @@ import { TbLogin2 } from "react-icons/tb";
 import "./style.scss";
 import { useNavigate } from "react-router-dom";
 
-function ClientNav({ setSos }) {
+function ClientNav({ setSos, setIsLogin }) {
   const navigate = useNavigate();
 
   return (

@@ -86,42 +86,44 @@ function Gadgets() {
 
   return (
     <>
-      <Transition />
-      <motion.div ref={ref} className="gadget">
-        <div className="gadget-sticky">
-          <h1 className="gadget-title">Gadgets</h1>
-          <motion.div style={{ x, left }} className="gadgets-container">
-            {gadgets.map((gadget, key) => (
-              <GadgetCard
-                setId={setId}
-                setVisualizer={setVisualizer}
-                objectPosition={objectPosition}
-                setDescription={setDescription}
-                setName={setName}
-                setPower={setPower}
-                {...gadget}
-                key={key}
-              />
-            ))}
-          </motion.div>
-        </div>
-      </motion.div>
-      <AnimatePresence mode="wait">
-        {isVisualizer && (
-          <GadgetVisualizer
-            id={id}
-            setId={setId}
-            setDescription={setDescription}
-            setVisualizer={setVisualizer}
-            setName={setName}
-            setPower={setPower}
-            name={name}
-            power={power}
-            description={description}
-          />
-        )}
-      </AnimatePresence>
-      <Footer />
+      <ReactLenis root options={{ duration: 2.4 }}>
+        <Transition />
+        <motion.div ref={ref} className="gadget">
+          <div className="gadget-sticky">
+            <h1 className="gadget-title">Gadgets</h1>
+            <motion.div style={{ x, left }} className="gadgets-container">
+              {gadgets.map((gadget, key) => (
+                <GadgetCard
+                  setId={setId}
+                  setVisualizer={setVisualizer}
+                  objectPosition={objectPosition}
+                  setDescription={setDescription}
+                  setName={setName}
+                  setPower={setPower}
+                  {...gadget}
+                  key={key}
+                />
+              ))}
+            </motion.div>
+          </div>
+        </motion.div>
+        <AnimatePresence mode="wait">
+          {isVisualizer && (
+            <GadgetVisualizer
+              id={id}
+              setId={setId}
+              setDescription={setDescription}
+              setVisualizer={setVisualizer}
+              setName={setName}
+              setPower={setPower}
+              name={name}
+              power={power}
+              description={description}
+            />
+          )}
+        </AnimatePresence>
+        <Footer />
+      </ReactLenis>
     </>
   );
 }
