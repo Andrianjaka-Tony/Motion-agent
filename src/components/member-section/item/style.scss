@@ -39,4 +39,41 @@
       object-fit: cover;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    justify-content: flex-start;
+
+    .member-section-item-name {
+      font-size: 12vw;
+      margin-top: 20vw;
+    }
+
+    .member-section-item-bottom {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-inline: 5vw;
+      gap: 2vw;
+      padding-top: 25vw;
+
+      .post,
+      .description {
+        font-size: 8vw;
+        width: 100%;
+        opacity: 0.7;
+      }
+
+      .post {
+        font-size: 4vw;
+      }
+
+      .image {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
 }

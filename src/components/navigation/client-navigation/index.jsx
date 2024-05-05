@@ -8,7 +8,7 @@ function ClientNavigation() {
   return (
     <>
       <ClientNav setSos={setSos} />
-      {isSos && <SOS />}
+      {isSos && <SOS setSos={setSos} />}
     </>
   );
 }

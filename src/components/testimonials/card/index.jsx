@@ -8,7 +8,9 @@ function TestimonialCard({ text }) {
         {text}
       </div>
       <div className="testimonials-user">
-        <img src="/images/1.jpeg" alt="" />
+        <div className="img-container">
+          <img src="/images/13.jpeg" alt="" />
+        </div>
         <p>John Doe</p>
       </div>
     </div>

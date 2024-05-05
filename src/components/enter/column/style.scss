@@ -5,6 +5,12 @@
   width: 33%;
   animation-timing-function: cubic-bezier(0.34, 0.63, 0, 0.99);
 
+  @media screen and (max-width: 768px) {
+    img {
+      aspect-ratio: 16 / 12 !important;
+    }
+  }
+
   &.left {
     transform: translateY(-200%);
     gap: 500px;

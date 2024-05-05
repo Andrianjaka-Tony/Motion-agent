@@ -3,5 +3,9 @@
     text-decoration: none;
     color: white;
     font-size: 4vw;
+
+    @media screen and (max-width: 768px) {
+      font-size: 15vw;
+    }
   }
 }
