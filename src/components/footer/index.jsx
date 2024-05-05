@@ -18,7 +18,7 @@ function Footer() {
           </Link>
           {connected ? (
             <>
-              <Link to="/gadgets" className="fotter-content-column-link">
+              <Link to="/gadgets_gallery" className="fotter-content-column-link">
                 Gadget
               </Link>
               <Link to="/profile" className="fotter-content-column-link">

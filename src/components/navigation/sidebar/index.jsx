@@ -12,7 +12,7 @@ const items = [
   },
   {
     name: "Gadgets",
-    link: "/gadgets",
+    link: "/gadgets_gallery",
   },
 
   {

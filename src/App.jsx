@@ -6,6 +6,7 @@ import Navigation from "./components/navigation";
 import Gadgets from "./pages/gadgets";
 import Profile from "./pages/profile";
 import Archive from "./pages/archive";
+import { URL } from "./utils/Alaivo";
 
 function App() {
   const location = useLocation();
@@ -14,21 +15,13 @@ function App() {
   return (
     <>
       {connected ? <Navigation /> : <ClientNavigation />}
-      <a
-        className="echo-index-link"
-        href="https://bff.ecoindex.fr/redirect/?url={url}"
-        target="_blank"
-      >
-        <img
-          className="echo-index-link-img"
-          src="https://bff.ecoindex.fr/badge/?theme={theme}&url={url}"
-          alt="Ecoindex Badge"
-        />
+      <a className="echo-index-link" href={"https://bff.ecoindex.fr/redirect/?url=" + URL} target="_blank">
+        <img className="echo-index-link-img" src={"https://bff.ecoindex.fr/badge/?url=" + URL} alt="Ecoindex Badge" />
       </a>
       <AnimatePresence initial={false} mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route element={<Home />} path="/" />
-          <Route element={<Gadgets />} path="/gadgets" />
+          <Route element={<Gadgets />} path="/gadgets_gallery" />
           <Route element={<Profile />} path="/profile" />
           <Route element={<Archive />} path="/archives" />
         </Routes>
