@@ -17,9 +17,9 @@ function ClientNav({ setSos, setIsLogin }) {
           alt="Logo"
         />
       </div>
-      <div onClick={() => setSos(true)} className="client-nav-btn client-nav-sos">
+      {/* <div onClick={() => setSos(true)} className="client-nav-btn client-nav-sos">
         <MdOutlineSos />
-      </div>
+      </div> */}
       <div onClick={() => setIsLogin(true)} className="client-nav-btn">
         <TbLogin2 />
       </div>
