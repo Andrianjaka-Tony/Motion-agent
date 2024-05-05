@@ -34,3 +34,13 @@ body {
   font-family: At hauss;
   src: url(./fonts/At-Hauss.otf);
 }
+
+.echo-index-link {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  display: block;
+  text-decoration: none;
+  transform: translateY(-50%);
+  z-index: 20;
+}

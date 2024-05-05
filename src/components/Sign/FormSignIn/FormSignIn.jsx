@@ -21,10 +21,10 @@ const FormSignIn = ({ handleSign = () => {} }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let res = await alaivoPost("auth/login/s", JSON.stringify({ code_name: formData.email, password: formData.password })).catch(
-      () => {}
-    );
-    console.log(res);
+    let res = await alaivoPost(
+      "auth/login/s",
+      JSON.stringify({ code_name: formData.email, password: formData.password })
+    ).catch(() => {});
     if (res)
       if (res.access_token === undefined) {
         setErrorOn(true);
@@ -49,7 +49,13 @@ const FormSignIn = ({ handleSign = () => {} }) => {
   };
 
   return (
-    <motion.div className="sign_in_form" variants={formSignVariants} initial="initial" animate="animate" exit={"exit"}>
+    <motion.div
+      className="sign_in_form"
+      variants={formSignVariants}
+      initial="initial"
+      animate="animate"
+      exit={"exit"}
+    >
       <div className="logo">
         <LogoDefault />
       </div>
@@ -59,15 +65,33 @@ const FormSignIn = ({ handleSign = () => {} }) => {
       <div className="title">Se connecter</div>
       <div className="subtitle">Let's dive with us in this incredible journey.</div>
       <form action="" method="post" onSubmit={handleSubmit}>
-        <RowInput title="Nom de code" type="text" id="email" name="email" fullWidth onChange={handleInputForm} />
-        <RowInput title="Password" type="password" id="password" name="password" fullWidth onChange={handleInputForm} />
+        <RowInput
+          title="Nom de code"
+          type="text"
+          id="email"
+          name="email"
+          fullWidth
+          onChange={handleInputForm}
+        />
+        <RowInput
+          title="Password"
+          type="password"
+          id="password"
+          name="password"
+          fullWidth
+          onChange={handleInputForm}
+        />
         <div className="button">
           <button>Login</button>
         </div>
       </form>
       <Divider text={"OR"} className={"divider_form"} />
 
-      <ButtonLogo icon={<RiVoiceRecognitionFill />} text={"Reconnaissance faciale"} onClick={handleFacialRecognition} />
+      <ButtonLogo
+        icon={<RiVoiceRecognitionFill />}
+        text={"Reconnaissance faciale"}
+        onClick={handleFacialRecognition}
+      />
       {openFacialRecognition && <WebCamModal closeModal={handleFacialRecognition} />}
     </motion.div>
   );

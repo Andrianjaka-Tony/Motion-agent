@@ -9,10 +9,6 @@ function ParallaxText3D() {
 
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
 
-  useMotionValueEvent(scrollYProgress, "change", (value) => {
-    console.log(value);
-  });
-
   return (
     <motion.div ref={ref} className="parallax-text-3d">
       <ParallaxText3DScene scrollYProgress={scrollYProgress} />
