@@ -7,21 +7,19 @@ import { itemsVariants, linkVariants, linksVariants, sidebarVariants } from "./a
 
 const items = [
   {
+    name: "Home",
+    link: "/",
+  },
+  {
     name: "Gadgets",
     link: "/gadgets",
   },
-  {
-    name: "Expertise",
-    link: "/expertise",
-  },
+
   {
     name: "Profile",
     link: "/profile",
   },
-  {
-    name: "Contact",
-    link: "/contact",
-  },
+
   {
     name: "Archives",
     link: "/archives",

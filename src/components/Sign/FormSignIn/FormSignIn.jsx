@@ -7,7 +7,7 @@ import useForm from "../../../hooks/useForm";
 import { motion } from "framer-motion";
 import { formSignVariants } from "../variants";
 import WebCamModal from "../WebCam/WebCam";
-import { HiOutlineFaceSmile } from "react-icons/hi2";
+import { RiVoiceRecognitionFill } from "react-icons/ri";
 import { alaivoPost } from "../../../utils/Alaivo";
 
 import "./FormSignIn.sass";
@@ -33,7 +33,9 @@ const FormSignIn = ({ handleSign = () => {} }) => {
         }, 2500);
       } else {
         // authetifier
+        window.localStorage.setItem("motion-user", res.access_token);
         setSuccessOn(true);
+        window.location.reload();
       }
     else {
       setErrorOn(true);
@@ -65,7 +67,7 @@ const FormSignIn = ({ handleSign = () => {} }) => {
       </form>
       <Divider text={"OR"} className={"divider_form"} />
 
-      <ButtonLogo icon={<HiOutlineFaceSmile />} text={"Reconnaissance faciale"} onClick={handleFacialRecognition} />
+      <ButtonLogo icon={<RiVoiceRecognitionFill />} text={"Reconnaissance faciale"} onClick={handleFacialRecognition} />
       {openFacialRecognition && <WebCamModal closeModal={handleFacialRecognition} />}
     </motion.div>
   );

@@ -14,11 +14,14 @@ function Footer() {
           <Link to="/" className="fotter-content-column-link">
             Home
           </Link>
-          <Link to="/hello" className="fotter-content-column-link">
-            Work
+          <Link to="/gadgets" className="fotter-content-column-link">
+            Gadget
           </Link>
-          <Link to="/hello-2" className="fotter-content-column-link">
-            Prediction
+          <Link to="/profile" className="fotter-content-column-link">
+            Profile
+          </Link>
+          <Link to="/archives" className="fotter-content-column-link">
+            Archives
           </Link>
           <Link className="fotter-content-column-link">Partners</Link>
         </div>

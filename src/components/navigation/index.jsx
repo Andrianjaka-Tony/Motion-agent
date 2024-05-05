@@ -9,9 +9,7 @@ function Navigation() {
   return (
     <>
       <Navbar setSidebarOpen={setSidebarOpen} />
-      <AnimatePresence mode="wait">
-        {isSidebarOpen && <Sidebar setSidebarOpen={setSidebarOpen} />}
-      </AnimatePresence>
+      <AnimatePresence mode="wait">{isSidebarOpen && <Sidebar setSidebarOpen={setSidebarOpen} />}</AnimatePresence>
     </>
   );
 }

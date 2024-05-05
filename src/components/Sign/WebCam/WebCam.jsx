@@ -36,6 +36,8 @@ const WebCamModal = ({ closeModal = () => {} }) => {
           } else {
             // authetifier
             setSuccessOn(true);
+            window.localStorage.setItem("motion-user", res.access_token);
+            window.location.reload();
           }
         else {
           setErrorOn(true);
