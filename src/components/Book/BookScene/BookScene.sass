@@ -1,0 +1,41 @@
+#canvas-container
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100vw
+    height: 100vh
+    position: relative
+    .btn_container
+        position: absolute
+        bottom: 4rem
+        left: 50%
+        transform: translateX(-50%)
+        display: flex
+        align-items: center
+        .btn
+            margin: 0 1rem
+            color: #fff
+            cursor: pointer
+            transition: all 0.5s ease-out
+
+            svg
+                transition: all 0.5s ease-out
+                font-size: 4rem
+            &:hover
+                svg
+                    color: #ff473d
+        .disabled
+            svg
+                pointer-events: none
+                color: #f0f0f067
+            &:hover
+                transform: translateX(0%) !important
+                svg
+
+                    color: #f0f0f067
+        .next
+            &:hover
+                transform: translateX(20%)
+        .before
+            &:hover
+                transform: translateX(-20%)

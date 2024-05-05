@@ -15,24 +15,22 @@ const items = [
     link: "/expertise",
   },
   {
-    name: "Agency",
-    link: "/agency",
+    name: "Profile",
+    link: "/profile",
   },
   {
     name: "Contact",
     link: "/contact",
   },
+  {
+    name: "Archives",
+    link: "/archives",
+  },
 ];
 
 function Sidebar({ setSidebarOpen }) {
   return (
-    <motion.aside
-      variants={sidebarVariants}
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      className="sidebar"
-    >
+    <motion.aside variants={sidebarVariants} initial="initial" animate="animate" exit="exit" className="sidebar">
       <div onClick={() => setSidebarOpen(false)} className="sidebar-close-btn">
         <AiOutlineClose />
       </div>

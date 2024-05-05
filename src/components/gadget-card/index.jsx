@@ -1,19 +1,7 @@
 import { motion } from "framer-motion";
 import "./style.scss";
 
-function GadgetCard({
-  id,
-  name,
-  power,
-  image,
-  objectPosition,
-  setId,
-  setVisualizer,
-  description,
-  setDescription,
-  setName,
-  setPower,
-}) {
+function GadgetCard({ id, name, power, image, objectPosition, setId, setVisualizer, description, setDescription, setName, setPower }) {
   return (
     <div
       onClick={() => {
@@ -25,7 +13,7 @@ function GadgetCard({
       }}
       className="gadget-card"
     >
-      <motion.img style={{ objectPosition }} src={image} />
+      <motion.img style={{ objectPosition }} src={image} draggable={false} />
       <div className="gadget-card-details">
         <div className="gadget-card-name">{name}</div>
         <div className="gadget-card-power">{power}</div>
