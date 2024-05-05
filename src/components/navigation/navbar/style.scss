@@ -9,6 +9,14 @@
   padding: 1.5vw 4vw;
   z-index: 8;
 
+  .navbar-logo {
+    img {
+      height: 30px;
+      aspect-ratio: 1/1;
+      cursor: pointer;
+    }
+  }
+
   .navbar-btn {
     background: var(--theme);
     color: #111;

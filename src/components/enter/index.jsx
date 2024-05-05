@@ -31,6 +31,7 @@ function Enter({ setEnter }) {
     "/gadgets/7.jpeg",
     "/gadgets/8.jpeg",
     "/images/map.png",
+    "/images/logo.png",
   ];
 
   const [loadingProgress, setLoadingProgress] = useState(0);

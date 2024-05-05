@@ -9,10 +9,18 @@
   padding: 1.5vw 4vw;
   z-index: 8;
 
+  .client-nav-logo {
+    img {
+      height: 30px;
+      aspect-ratio: 1/1;
+      cursor: pointer;
+    }
+  }
+
   .client-nav-btn {
     background: white;
     height: 50px;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
     border-radius: 80px;
     text-transform: uppercase;
     cursor: pointer;
