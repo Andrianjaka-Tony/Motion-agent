@@ -7,6 +7,7 @@ import Gadgets from "./pages/gadgets";
 import Sign from "./components/Sign/Sign";
 import Archive from "./pages/archive";
 import Profile from "./pages/profile";
+import PlaneViewer from "./components/PlaneViewer";
 // import Cursor from "./components/cursor";
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
 
   return (
     <>
+      <PlaneViewer />
+
       <Navigation />
       {/* <SOS /> */}
       {/* <Cursor /> */}
