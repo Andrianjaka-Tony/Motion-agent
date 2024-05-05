@@ -10,7 +10,6 @@ const Simulator = () => {
         <OrbitControls maxPolarAngle={1.9} />
         <ambientLight color={"white"} intensity={5} />
         <spotLight position={[0, 3, 0]} intensity={50} color={"white"} />
-        <axesHelper args={[5]} />
         <JailHouse position={[70, -10, -15]} />
       </Canvas>
     </div>

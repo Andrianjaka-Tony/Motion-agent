@@ -3,6 +3,8 @@ import TextAnime from "../text-anime";
 import "./style.scss";
 
 function Footer() {
+  const connected = window.localStorage.getItem("motion-user") ? true : false;
+
   return (
     <section className="footer">
       <h2 className="footer-title">
@@ -14,15 +16,22 @@ function Footer() {
           <Link to="/" className="fotter-content-column-link">
             Home
           </Link>
-          <Link to="/gadgets" className="fotter-content-column-link">
-            Gadget
-          </Link>
-          <Link to="/profile" className="fotter-content-column-link">
-            Profile
-          </Link>
-          <Link to="/archives" className="fotter-content-column-link">
-            Archives
-          </Link>
+          {connected ? (
+            <>
+              <Link to="/gadgets" className="fotter-content-column-link">
+                Gadget
+              </Link>
+              <Link to="/profile" className="fotter-content-column-link">
+                Profile
+              </Link>
+              <Link to="/archives" className="fotter-content-column-link">
+                Archives
+              </Link>
+            </>
+          ) : (
+            <></>
+          )}
+
           <Link className="fotter-content-column-link">Partners</Link>
         </div>
         <div className="footer-content-column socials">
