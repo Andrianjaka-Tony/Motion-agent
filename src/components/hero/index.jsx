@@ -2,12 +2,15 @@ import { motion } from "framer-motion";
 import "./style.scss";
 import { textEase } from "../../helpers/ease-helper";
 import TextAnime from "../text-anime";
+import { useRef } from "react";
 
 function Hero() {
   const { innerWidth, innerHeight } = window;
 
+  const ref = useRef(null);
+
   return (
-    <section className="hero">
+    <motion.section ref={ref} className="hero">
       <h1 className="hero-title">
         <div className="hero-title-content">
           <TextAnime duration={2} text="outlast" delay={0.6} />
@@ -36,7 +39,7 @@ function Hero() {
         style={{ aspectRatio: `${innerWidth} / ${innerHeight}` }}
         alt=""
       />
-    </section>
+    </motion.section>
   );
 }
 

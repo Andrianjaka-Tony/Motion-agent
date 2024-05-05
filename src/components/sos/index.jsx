@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import "./style.scss";
 import { useRef, useState } from "react";
+import { CiMicrophoneOn } from "react-icons/ci";
+import "./style.scss";
 
 function SOS({ setSos }) {
   const mimeType = "audio/mpeg";
@@ -30,6 +31,7 @@ function SOS({ setSos }) {
   };
 
   const startRecording = async () => {
+    console.log("recorgind");
     setRecordingStatus("recording");
     const media = new MediaRecorder(stream, { type: mimeType });
     mediaRecorder.current = media;
@@ -44,23 +46,63 @@ function SOS({ setSos }) {
   };
 
   const stopRecording = () => {
+    console.log("stop");
     setRecordingStatus("inactive");
     mediaRecorder.current.stop();
     mediaRecorder.current.onstop = () => {
       const audioBlob = new Blob(audioChunks, { type: mimeType });
-      const audioUrl = URL.createObjectURL(audioBlob);
-      setAudio(audioUrl);
+      // const audioUrl = URL.createObjectURL(audioBlob);
+      const formData = new FormData();
+      formData.append("audio", audioBlob, "recorded_audio.wav");
+      fetch("http://192.168.137.169:5000/sos/vo", {
+        method: "POST",
+        // headers: {
+        //   "Content-Type": "multipart/form-data",
+        // },
+        body: formData,
+      })
+        .then((response) => response.json())
+        .then(console.log);
+
+      setAudio(audioBlob);
       setAudioChunks([]);
     };
   };
 
+  const handleMicrophoneClick = () => {
+    if (!permission) {
+      getMicrophonePermission();
+      return;
+    } else if (permission && recordingStatus === "inactive") {
+      startRecording();
+      return;
+    } else if (recordingStatus === "recording") {
+      stopRecording();
+      return;
+    }
+  };
+
+  const sendAudio = () => {
+    const formData = new FormData();
+    formData.append("audio", audio, "recorded_audio.mp3");
+    const response = fetch("URL_DE_VOTRE_API", {
+      method: "POST",
+      body: formData,
+    });
+  };
+
   return (
     <motion.div initial={{ x: "-50%", y: "-50%" }} className="sos">
-      {/* <label htmlFor="sos-text-area">Describe your problem</label>
-      <textarea rows={5} id="sos-text-area" placeholder="Someone is attacking me" />
-      <button className="sos-btn">Send</button> */}
+      <label htmlFor="sos-text-area">Describe your problem</label>
+      <div onClick={handleMicrophoneClick} className="sos-record-btn">
+        <CiMicrophoneOn />
+      </div>
+      {/* <textarea rows={5} id="sos-text-area" placeholder="Someone is attacking me" /> */}
+      <button onClick={sendAudio} className="sos-btn">
+        Send
+      </button>
 
-      {!permission ? (
+      {/* {!permission ? (
         <button onClick={getMicrophonePermission} type="button">
           Get Microphone
         </button>
@@ -74,15 +116,7 @@ function SOS({ setSos }) {
         <button onClick={stopRecording} type="button">
           Stop Recording
         </button>
-      ) : null}
-      {audio ? (
-        <div className="audio-container">
-          <audio src={audio} controls></audio>
-          <a download href={audio}>
-            Download Recording
-          </a>
-        </div>
-      ) : null}
+      ) : null} */}
     </motion.div>
   );
 }

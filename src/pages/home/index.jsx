@@ -8,6 +8,7 @@ import useScrollToTop from "../../hooks/useScrollToTop";
 import MemberSection from "../../components/member-section";
 import Testimonials from "../../components/testimonials";
 import Partners from "../../components/partners";
+import About from "../../components/about";
 
 function Home() {
   const [isEnter, setEnter] = useState(true);
@@ -26,6 +27,7 @@ function Home() {
         )}
         {!isEnter && <Hero key="hero" />}
       </AnimatePresence>
+      <About />
       <Testimonials />
       <Partners />
       <MemberSection />

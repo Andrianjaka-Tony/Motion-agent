@@ -1,0 +1,34 @@
+.about {
+  height: 300vh;
+  width: 100vw;
+  margin-block: 50vh;
+
+  .about-sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    .about-sticky-clip {
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+    }
+
+    .about-sticky-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      img {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+      }
+    }
+  }
+}
