@@ -23,6 +23,7 @@ function App() {
     <>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       {/* <Navigation /> */}
 =======
       <Navigation />
@@ -40,6 +41,13 @@ function App() {
       {/* <ClientNav /> */}
       {/* <ClientNavigation /> */}
 >>>>>>> 985787d (Hello world)
+=======
+      {/* <Navigation /> */}
+      {/* <SOS /> */}
+      {/* <Cursor /> */}
+      {/* <ClientNav /> */}
+      <ClientNavigation />
+>>>>>>> ebda72d (Hello)
       <AnimatePresence initial={false} mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route element={<Home />} path="/" />
