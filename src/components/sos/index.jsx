@@ -54,7 +54,7 @@ function SOS({ setSos }) {
       // const audioUrl = URL.createObjectURL(audioBlob);
       const formData = new FormData();
       formData.append("audio", audioBlob, "recorded_audio.wav");
-      fetch("http://192.168.137.169:5000/sos/vo", {
+      fetch("http://192.168.137.225:5000/sos/vo", {
         method: "POST",
         headers: {
           "Content-Type": "multipart/form-data",
