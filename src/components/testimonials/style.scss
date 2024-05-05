@@ -28,4 +28,13 @@
     overflow-x: hidden;
     height: 100%;
   }
+
+  @media screen and (max-width: 768px) {
+    .testimonials-sticky {
+      .testimonials-title {
+        padding: 10vw 0;
+        font-size: 6vw;
+      }
+    }
+  }
 }

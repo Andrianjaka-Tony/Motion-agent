@@ -50,10 +50,14 @@
     width: 100%;
     margin-top: -6.5vw;
     object-fit: cover;
+
+    @media screen and (max-width: 768px) {
+      aspect-ratio: 16 / 12 !important;
+    }
   }
 
   @media screen and (max-width: 768px) {
-    padding: 20vw 3vw;
+    padding: 30vw 3vw;
 
     .hero-title {
       font-size: 18vw;

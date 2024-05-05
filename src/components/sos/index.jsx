@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import "./style.scss";
 
-function SOS() {
+function SOS({ setSos }) {
   return (
     <motion.div initial={{ x: "-50%", y: "-50%" }} className="sos">
       <label htmlFor="sos-text-area">Describe your problem</label>
