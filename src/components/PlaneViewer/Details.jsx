@@ -29,19 +29,19 @@ export const textSections = [
   {
     cameraRailDist: -1,
     position: new Vector3(curvePoints[3].x - 3, curvePoints[3].y, curvePoints[3].z),
-    title: "Fear of flying?",
-    subtitle: `Our flight attendants will help you have a great journey`,
+    title: "Keep calm ",
+    subtitle: `And  do your best soldier `,
   },
   {
     cameraRailDist: 1.5,
     position: new Vector3(curvePoints[4].x + 3.5, curvePoints[4].y, curvePoints[4].z - 12),
     title: "Agents",
-    subtitle: `- Peter \n - Mark \n -Jean`,
+    subtitle: `- 007 \n - 002 \n -009`,
   },
   {
     cameraRailDist: 1.8,
     position: new Vector3(curvePoints[5].x - 3.5, curvePoints[4].y, curvePoints[4].z - 12),
     title: "Gadgets ",
-    subtitle: `- Pistolet AM89 \n - Stylo laser  \n -Hyper parapluie`,
+    subtitle: `- Lipstick \n - Glasses   \n - Gun`,
   },
 ];
