@@ -1,6 +1,6 @@
 import { getHeaderAuth, getHeaderAuthJWT } from "../hooks/useIdentity";
 
-export const URL = "https://motion.madagascar.webcup.hodi.host/";
+export const URL = "http://192.168.137.225/";
 
 const rebuildURL = (url = "") => {
   if (url.indexOf(":new/") !== -1) return url;

@@ -26,6 +26,20 @@
     top: 50%
     z-index: 4
     transform: translate(-50%, -50%)
+    .closer
+        position: absolute
+        top: 1rem
+        z-index: 1
+        right: 1.5rem
+        z-index: 5
+        cursor: pointer
+        svg
+            font-size: 2rem
+        &:hover
+            opacity: 0.75
+        &:active
+            opacity: 0.5
+    .message
     @include breakpoints.break_LG()
         padding: 0.5em 2.2rem
     @include breakpoints.break_MD()
