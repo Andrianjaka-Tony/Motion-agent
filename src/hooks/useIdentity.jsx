@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 
 // variable localstorage
 export const userStocked = "user";
-export const tokenStocked = "token";
+export const tokenStocked = "motion-user";
 const refreshTokenStocked = "refresh_token";
 const userDetails = "details_user_";
 export const contentTypeHeaders = { "Content-Type": "application/json" };
