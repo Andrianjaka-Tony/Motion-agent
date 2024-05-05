@@ -14,7 +14,11 @@ function App() {
 
   return (
     <>
+<<<<<<< HEAD
       {/* <Navigation /> */}
+=======
+      <Navigation />
+>>>>>>> b8e32c2 (mety)
       {/* <SOS /> */}
       {/* <Cursor /> */}
       {/* <ClientNav /> */}
