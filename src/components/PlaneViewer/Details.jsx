@@ -17,20 +17,20 @@ export const textSections = [
   {
     cameraRailDist: -1,
     position: new Vector3(curvePoints[1].x - 5, curvePoints[1].y, curvePoints[1].z),
-    title: `Mission - Secourir une personne`,
-    subtitle: `Description de la mission `,
+    title: `Mission - Operation Shadow Sentinel`,
+    subtitle: `Extracting confidential information from a high-security inmate`,
   },
   {
     cameraRailDist: 1.5,
-    position: new Vector3(curvePoints[2].x + 2, curvePoints[2].y, curvePoints[2].z),
-    title: "Durée estimé ",
-    subtitle: `24:00 `,
+    position: new (curvePoints[2].x + 2, curvePoints[2].y, curvePoints[2].z)(),
+    title: "Time to arrive  ",
+    subtitle: `At 0200 hours  `,
   },
   {
     cameraRailDist: -1,
     position: new Vector3(curvePoints[3].x - 3, curvePoints[3].y, curvePoints[3].z),
-    title: "Keep calm ",
-    subtitle: `And  do your best soldier `,
+    title: "Main goals",
+    subtitle: `-Planting surveillance devices in key areas of the prison without detection`,
   },
   {
     cameraRailDist: 1.5,
